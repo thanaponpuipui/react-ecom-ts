@@ -1,0 +1,12 @@
+@import '../../scss/color-var.scss';
+
+.text-slide-bar {
+  background-color: #FFFFFF;
+  width: 100vw;
+  overflow: hidden;
+  border: none;
+
+  .scrolling {
+    font-size: 1em;
+  }
+}

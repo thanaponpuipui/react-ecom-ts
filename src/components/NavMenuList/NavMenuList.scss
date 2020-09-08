@@ -1,0 +1,8 @@
+@import '../../scss/color-var.scss'; // global color variable
+
+.nav-menu-list {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
