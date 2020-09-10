@@ -1,0 +1,7 @@
+@import '../../scss/color-var.scss';
+@import '../../scss/rule-var.scss';
+
+.footer {
+  background: $blue;
+  padding: 20px $g-indent-space;
+}
