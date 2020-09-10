@@ -1,4 +1,5 @@
 import React from 'react'
+import './MenuLink.scss'
 import { Link } from 'react-router-dom'
 
 type props = {
