@@ -5,8 +5,19 @@
   width: 100vw;
   overflow: hidden;
   border: none;
+  height: 42px;
+  position: relative;
+  text-align: center;
 
-  .scrolling {
-    font-size: 1em;
+.scrolling {
+    font-size: 1.2em;
+    height: 100%;
+    vertical-align: middle;
+    @media only screen and (max-width: 1150px) {
+      font-size: 1em;
+    }
+  }
+  @media only screen and (max-width: 1150px) {
+    height: 30px;
   }
 }

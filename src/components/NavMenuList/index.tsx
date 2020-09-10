@@ -2,16 +2,27 @@ import React from 'react'
 import './NavMenuList.scss'
 import MenuLink from '../MenuLink'
 
-type props = {
-  
+type menuItem = {
+  text: string
+  link: string
 }
 
-const NavMenuList = () => {
+type props = {
+  menuItems: menuItem[]
+}
+
+const NavMenuList = ({menuItems}: props) => {
   return (
     <ul className='nav-menu-list'>
-      <li>
-        <MenuLink link=''/>
-      </li>
+      {
+        menuItems.map((item, index) => {
+          return (
+            <li key={index}>
+              <MenuLink link={item.link} text={item.text} />
+            </li>
+          )
+        })
+      }
     </ul>
   )
 }
