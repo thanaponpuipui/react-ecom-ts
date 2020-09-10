@@ -1,21 +1,13 @@
 import React from 'react'
-import TextSlideBar from '../../components/TextSlideBar'
-import NavMenuList from '../../components/NavMenuList'
-// import SearchBar from '../../components/SearchBar'
-// import RedLineDecor from '../../components/RedLineDecor'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 const HomePage = () => {
   return (
     <>
-      <header>
-        <TextSlideBar />
-        <div className='nav'>
-          <div className='logo'>
+      <Header/>
 
-          </div>
-          <NavMenuList/>
-        </div>
-      </header>
+      <Footer/>
     </>
   )
 }
