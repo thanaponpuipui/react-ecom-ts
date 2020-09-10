@@ -4,4 +4,19 @@
 .footer {
   background: $blue;
   padding: 20px $g-indent-space;
+  display: flex;
+  justify-content: space-between;
+  
+  .infomation{
+
+    .info-list {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+  }
+
+  .info-list {
+    
+  }
 }
