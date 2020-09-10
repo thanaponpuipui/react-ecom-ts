@@ -1,15 +1,17 @@
-@import '../../scss//color-var.scss';
+@import '../../scss/color-var.scss';
+@import '../../scss/rule-var.scss';
 
 .header {
   font-size: 1.2rem;
-  position: relative;
+  position: fixed;
+  left:0;
 }
 
 .nav {
   background: $blue;
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px 18px 100px;
+  padding: 20px $g-indent-space 18px $g-indent-space;
   position: relative;
 
   @media only screen and (max-width: 1150px) {
@@ -18,7 +20,7 @@
   }
   @media only screen and (max-width: 900px) {
     flex-direction: row;
-    padding: 10px 25px 10px 25px;
+    padding: 10px $small-indent-space 10px $small-indent-space;
   }
 
   & a {

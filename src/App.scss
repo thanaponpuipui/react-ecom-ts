@@ -1,3 +1,9 @@
+@import './scss/rule-var.scss';
+
+.App {
+  padding: 0 $g-indent-space 0 $g-indent-space;
+}
+
 a {
   color: initial;
   text-decoration: none;
