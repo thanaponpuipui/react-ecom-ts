@@ -1,13 +1,14 @@
 import React from 'react'
 import Header from '../../components/Header'
-// import SearchBar from '../../components/SearchBar'
-// import RedLineDecor from '../../components/RedLineDecor'
+import Footer from '../../components/Footer'
 
 const HomePage = () => {
 
   return (
     <>
       <Header/>
+
+      <Footer/>
     </>
   )
 }
