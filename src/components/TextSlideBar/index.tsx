@@ -7,9 +7,9 @@ type props = {
 const TextSlideBar = ({text = 'put promotion message here.'}: props) => {
   return (
     <div className='text-slide-bar'>
-      <div className='scrolling'>
+      <span className='scrolling'>
         {text}
-      </div>
+      </span>
     </div>
   )
 }

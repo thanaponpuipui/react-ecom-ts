@@ -1,0 +1,43 @@
+.search-bar {
+  // local var
+  $width: 240px;
+  $smallWidth: 150px;
+  $shift: 40px;
+
+  width: $width;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: $shift + 100px;
+
+  @media only screen and (max-width: 1000px) {
+    width: $smallWidth;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -$shift;
+    width: $width + $shift;
+    height: 2px;
+    background: black;
+    @media only screen and (max-width: 1000px) {
+      width: $smallWidth + $shift;
+    }
+  }
+
+  input {
+    border: none;
+    overflow: hidden;
+    width: $width;
+    padding-left: .5em;
+    background: transparent;
+    font-size: .85rem;
+    color: white;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

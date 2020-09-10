@@ -1,0 +1,43 @@
+@import '../../scss/color-var.scss';
+
+.line-decor {
+
+  position: absolute;
+  // display: flex;
+  height: 50px;
+  width: 80vw;
+  top: 150px;
+  left: 370px;
+
+  .line-red {
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    transform: skew(140deg);
+    background: linear-gradient(90.05deg, $red 38.38%, rgba(222, 10, 20, 0.265625) 87.59%, rgba(222, 10, 20, 0) 101.26%);
+    @media only screen and (max-width: 1500px) {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 1150px) {
+    display: none;
+  }
+
+  .first-line {
+    position: relative;
+    top: 25px;
+    right: 80px;
+  }
+
+  .second-line {
+    position: relative;
+    right: 40px;
+  }
+
+  .third-line {
+    position: relative;
+    bottom: 25px;
+  }
+
+}
