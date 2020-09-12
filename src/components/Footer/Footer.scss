@@ -8,15 +8,20 @@
   justify-content: space-between;
   
   .infomation{
-
+    color: $white;
+    font-size: .85rem;
     .info-list {
+      margin-top: 1em;
       display: flex;
+      flex-direction: column;
       justify-content: flex-start;
     }
-
-  }
-
-  .info-list {
-    
+    .social-list {
+      .image-wrapper {
+        position: relative;
+        display: block;
+        width: 60px;
+      }
+    }
   }
 }
