@@ -20,11 +20,11 @@ const Header = () => {
   ]
 
   return (
-    <div className='header'>
+    <div className="header">
       <TextSildeBar />
-      <div className='nav'>
+      <div className="nav">
         {/* logo */}
-        <div style={{minWidth:150, height:170, background: 'white'}}></div>
+        <div className="icon" style={{minWidth:150, height:170, background: 'white'}}></div>
         <NavMenuList menuItems={menuItems} />
         <SearchBar search={search} searchChange={searchChange} />
         <LineDecor />
