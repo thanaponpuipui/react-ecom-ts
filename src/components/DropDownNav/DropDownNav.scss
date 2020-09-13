@@ -1,4 +1,20 @@
+@import '../../scss/color-var.scss';
+@import '../../scss/rule-var.scss';
+
 .dd-nav {
   position: absolute;
-  
+  display: flex;
+  width: 100vw;
+  top:208px;
+  background: #aaaaaa;
+  padding: $g-indent-space;
+  z-index: 5;
+
+  .title-banner {
+    background: $grey;
+    position: absolute;
+    bottom: 0;
+    width:100vw;
+    box-shadow: 1px 1px black;
+  }
 }
