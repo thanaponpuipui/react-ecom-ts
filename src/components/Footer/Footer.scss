@@ -3,7 +3,7 @@
 
 .footer {
   background: $blue;
-  padding: 20px $g-indent-space;
+  padding: 25px $g-indent-space;
   display: flex;
   justify-content: space-between;
   
@@ -13,15 +13,36 @@
     .info-list {
       margin-top: 1em;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: flex-start;
-    }
-    .social-list {
-      .image-wrapper {
-        position: relative;
-        display: block;
-        width: 60px;
+
+      .info {
+        margin: 0 1.25rem;
+        cursor: pointer;
       }
+    }
+    .cp {
+      position: relative;
+      top: 1.2rem;
+      font-size: .8em;
+      text-decoration: underline;
+      color: #AAAAAA;
+    }
+  }
+
+  .social-list {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 64px;
+      height: 64px;
+      overflow: hidden;
+      margin: 0 .5rem;
     }
   }
 }
