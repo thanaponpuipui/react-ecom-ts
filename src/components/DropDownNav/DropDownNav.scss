@@ -5,16 +5,23 @@
   position: absolute;
   display: flex;
   width: 100vw;
-  top:208px;
-  background: #aaaaaa;
+  top: 208px;
+  left: 0;
+  background: white;
   padding: $g-indent-space;
   z-index: 5;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, .7);
+
+  @media only screen and (max-width:1150px) and (min-width: 900px) {
+    top: 243px;
+  }
 
   .title-banner {
     background: $grey;
     position: absolute;
     bottom: 0;
+    left: 0;
     width:100vw;
-    box-shadow: 1px 1px black;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, .7);
   }
 }

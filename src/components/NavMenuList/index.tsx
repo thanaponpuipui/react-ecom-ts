@@ -34,6 +34,7 @@ const NavMenuList = ({menuItems}: props) => {
             <li key={index} onMouseOver={select} onMouseOut={unselected}>
               <MenuLink link={item.link} text={item.text} />
               <div className={selectedMenu === item.text ? '' : 'none'}>
+                <div className="drop-line"></div>
                 <DropDownNav title={item.text}>
                   test
                 </DropDownNav>
