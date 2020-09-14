@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './NavMenuList.scss'
 import MenuLink from '../MenuLink'
 import DropDownNav from '../DropDownNav'
+import ProductCateGory from '../DropDownNav/ProductCategory'
 
 type menuItem = {
   text: string
@@ -31,7 +32,20 @@ const NavMenuList = ({menuItems}: props) => {
           function unselected () {
             setSelectedMenu('')
           }
-          
+
+          function switchMenu (title: string): React.ReactElement {
+            switch (title) {
+              case 'หมวดหมู่สินค้า':
+                return <ProductCateGory/>
+              case 'แบรนด์':
+                return <>brand</>
+              case 'สินค้าลดราคา':
+                return <>on sale</>
+              default:
+                return <></>
+            }
+          }
+
           return (
             <li key={index} onMouseOver={select} onMouseOut={unselected}>
               <MenuLink link={item.link} text={item.text} />
@@ -39,7 +53,7 @@ const NavMenuList = ({menuItems}: props) => {
                 <div className={selectedMenu === item.text ? '' : 'none'}>
                   <div className="drop-line"></div>
                   <DropDownNav title={item.text}>
-                    test
+                    {switchMenu(item.text)}
                   </DropDownNav>
                 </div>
               }
