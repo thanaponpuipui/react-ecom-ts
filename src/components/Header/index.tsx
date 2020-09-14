@@ -12,9 +12,9 @@ const Header = () => {
   const searchChange = (e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)
 
   const menuItems = [
-    { text: 'หมวดหมู่สินค้า', link: '/product' },
-    { text: 'แบรนด์', link: '/' },
-    { text: 'สินค้าลดราคา', link: '/' },
+    { text: 'หมวดหมู่สินค้า', link: '/', hasDrop: true },
+    { text: 'แบรนด์', link: '/', hasDrop: true },
+    { text: 'สินค้าลดราคา', link: '/', hasDrop: true },
     { text: 'วิธีการรสั่งซื้อ', link: '/' },
     { text: 'ติดต่อเรา', link: '/' },
   ]

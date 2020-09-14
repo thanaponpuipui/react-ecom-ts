@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage';
 
 function App() {
   useEffect(() => {
-    document.title = 'Batadee - main'
+    document.title = 'Bathadee - main'
   }, [])
 
   return (

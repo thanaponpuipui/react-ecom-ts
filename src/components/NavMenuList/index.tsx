@@ -6,6 +6,7 @@ import DropDownNav from '../DropDownNav'
 type menuItem = {
   text: string
   link: string
+  hasDrop?: boolean
 }
 
 type props = {
@@ -30,15 +31,18 @@ const NavMenuList = ({menuItems}: props) => {
           function unselected () {
             setSelectedMenu('')
           }
+          
           return (
             <li key={index} onMouseOver={select} onMouseOut={unselected}>
               <MenuLink link={item.link} text={item.text} />
-              <div className={selectedMenu === item.text ? '' : 'none'}>
-                <div className="drop-line"></div>
-                <DropDownNav title={item.text}>
-                  test
-                </DropDownNav>
-              </div>
+              { item.hasDrop &&
+                <div className={selectedMenu === item.text ? '' : 'none'}>
+                  <div className="drop-line"></div>
+                  <DropDownNav title={item.text}>
+                    test
+                  </DropDownNav>
+                </div>
+              }
             </li>
           )
         })
