@@ -9,7 +9,14 @@ type props = {
 const MenuLink = ({text='Menu Text', link}: props) => {
   return (
     <Link to={link} className='menu'>
-      {text}
+      <span className="menu-text">
+        <span className="text">
+          {text}
+        </span>
+        <div className="first ll"></div>
+        <div className="second ll"></div>
+        <div className="third ll"></div>
+      </span>
     </Link>
   )
 }
