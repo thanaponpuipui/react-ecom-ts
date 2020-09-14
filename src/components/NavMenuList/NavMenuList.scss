@@ -6,7 +6,7 @@
   flex-wrap: nowrap;
   font-size: 1.75em;
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 45px;
   justify-content: flex-start;
   align-items: center;
 
@@ -19,6 +19,9 @@
   @media only screen and (max-width: 1170px) {
     justify-content: center;
     font-size: 1em;
+    padding: 0 0 45px 0;
+  }
+  @media only screen and (max-width: 1150px) {
     padding: 0;
   }
   @media only screen and (max-width: 900px) {
@@ -29,12 +32,13 @@
     position: absolute;
     width: 65%;
     max-width: 1200px;
+    border: 1px solid black;
     left: 11rem;
-    height: 90px;
+    height: 110px;
     bottom: 0;
     z-index: 3;
     @media only screen and (max-width: 1150px) {
-      display: none;
+      height: 18px;
     }
   }
 }
