@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './NavMenuList.scss'
 import MenuLink from '../MenuLink'
 import DropDownNav from '../DropDownNav'
-import ProductCateGory from '../DropDownNav/ProductCategory'
+import { ProductCategory, SaleProduct, Brand } from '../DropDownNav/subMenu'
 
 type menuItem = {
   text: string
@@ -36,7 +36,7 @@ const NavMenuList = ({menuItems}: props) => {
           function switchMenu (title: string): React.ReactElement {
             switch (title) {
               case 'หมวดหมู่สินค้า':
-                return <ProductCateGory/>
+                return <ProductCategory/>
               case 'แบรนด์':
                 return <>brand</>
               case 'สินค้าลดราคา':
