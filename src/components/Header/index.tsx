@@ -24,7 +24,7 @@ const Header = () => {
       <TextSildeBar />
       <div className="nav">
         {/* logo */}
-        <div className="icon" style={{minWidth:150, height:170, background: 'white'}}></div>
+        <div className="icon" style={{minWidth:170, height:170, background: 'white'}}></div>
         <NavMenuList menuItems={menuItems} />
         <SearchBar search={search} searchChange={searchChange} />
         <LineDecor />
