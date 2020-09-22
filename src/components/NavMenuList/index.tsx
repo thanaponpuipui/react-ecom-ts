@@ -6,7 +6,7 @@ import { ProductCategory, SaleProduct, Brand } from '../DropDownNav/subMenu'
 
 type menuItem = {
   text: string
-  link: string
+  link?: string
   hasDrop?: boolean
 }
 

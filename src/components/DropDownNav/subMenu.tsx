@@ -37,6 +37,9 @@ export const SaleProduct = () => {
     <>
       <div className="image-slide">
         <img src="#" alt="Product Sale Show" />
+        <ul className="col-list">
+          <li></li>
+        </ul>
       </div>
     </>
   )
