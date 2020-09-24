@@ -38,16 +38,16 @@ const NavMenuList = ({menuItems}: props) => {
               case 'หมวดหมู่สินค้า':
                 return <ProductCategory/>
               case 'แบรนด์':
-                return <>brand</>
+                return <Brand/>
               case 'สินค้าลดราคา':
-                return <>on sale</>
+                return <SaleProduct/>
               default:
                 return <></>
             }
           }
 
           return (
-            <li key={index} onMouseOver={select} onMouseOut={unselected}>
+            <li key={index} onMouseOver={select} onMouseLeave={unselected}>
               <MenuLink link={item.link} text={item.text} />
               { item.hasDrop &&
                 <div className={selectedMenu === item.text ? '' : 'none'}>
