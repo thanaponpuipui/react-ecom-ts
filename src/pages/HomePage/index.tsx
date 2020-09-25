@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Banner from '../../components/Banner'
+import Body from './Body'
+import './HomePage.scss'
 
 const HomePage = () => {
 
@@ -13,6 +15,7 @@ const HomePage = () => {
           style={{width: '100%'}}
         />
       </Banner>
+      <Body/>
       <Footer/>
     </>
   )
