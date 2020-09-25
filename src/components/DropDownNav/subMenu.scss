@@ -1,3 +1,51 @@
+@import '../../scss/color-var.scss';
+
 .image-slide {
   position: relative;
+}
+
+.col {
+  & li:hover {
+    color: $blue;
+  }
+}
+
+.pro-col {
+  .title {
+    display: block;
+  }
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  margin-left: 2em;
+  .col-list {
+    font-size: .8em;
+  }
+}
+
+.brand-list {
+  font-size: .8em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.sale-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  font-size: .9em;
+  
+
+  li {
+
+    margin-right: 1rem;
+    
+    &:not(:first-child) {
+      &::before {
+        content: '/';
+      }
+    }
+  }
+
 }

@@ -21,7 +21,10 @@ interface listLink extends linkItem {
   text: string | number
 }
 
-const NormalList = ({text, link}: listLink) => <li className="normal-list"><Link to={link}>{text}</Link></li>
+const NormalList = ({text, link}: listLink) => <li className="normal-list">
+  <Link to={link}>{text}</Link></li>
+
+const ListAll = ({link}: {link:string}) => <li className="all"><Link to={link}>ทั้งหมด</Link></li>
 
 export const ProductCategory = () => {
 
@@ -142,10 +145,10 @@ export const ProductCategory = () => {
         <img src="#" alt="show case banner" />
       </div>
 
-      <div className="col1">
+      <div className="pro-col col">
         <span className="title">รองเท้าผู้ชาย</span>
         <ul className="col-list">
-          <li className="all">ทั้งหมด</li>
+          <ListAll link=''/>
           {
             menshoes.map((item, index) => {
               return <NormalList key={index} text={'รองเท้า' + item.type} link={item.link} />
@@ -154,10 +157,10 @@ export const ProductCategory = () => {
         </ul>
       </div>
 
-      <div className="col2">
+      <div className="pro-col col">
         <span className="title">รองเท้าผู้หญิง</span>
         <ul className="col-list">
-          <li className="all">ทั้งหมด</li>
+          <ListAll link=''/>
           {
             womenshoes.map((item, index)=> {
               return <NormalList key={index} text={'รองเท้า' + item.type} link={item.link} />
@@ -166,10 +169,10 @@ export const ProductCategory = () => {
         </ul>
       </div>
 
-      <div className="col3">
+      <div className="pro-col col">
         <span className="title">รองเท้าเด็ก</span>
         <ul className="col-list">
-          <li className="all">ทั้งหมด</li>
+          <ListAll link=''/>
           {
             kidshoes.map((item, index)=> {
               return <NormalList key={index} text={'รองเท้า' + item.type} link={item.link} />
@@ -228,15 +231,15 @@ export const SaleProduct = () => {
     <>
       <div className="image-slide">
         <img src="#" alt="Product Sale Show" />
-        <ul className="col-list">
-          <li className="all">ทั้งหมด</li>
-          {
-            salePrice.map((price, index) => {
-              return <NormalList text={price.percent} link ={price.link} key={index} />
-            })
-          }
-        </ul>
       </div>
+      <ul className="sale-list col">
+        <ListAll link=''/>
+        {
+          salePrice.map((price, index) => {
+            return <NormalList text={price.percent} link ={price.link} key={index} />
+          })
+        }
+      </ul>
     </>
   )
 }
@@ -324,7 +327,8 @@ export const Brand = () => {
 
   return (
     <>
-      <ul className="brand-list">
+      <ul className="brand-list col">
+        <ListAll link=''/>
         {
           bList.map((brand, index) => {
             return <NormalList link={brand.link} text={brand.name} key={index} />
