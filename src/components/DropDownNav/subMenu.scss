@@ -1,0 +1,60 @@
+@import '../../scss/color-var.scss';
+
+.image-slide {
+  position: relative;
+}
+.image-slide.prod {
+  @media only screen and (max-width: 1150px) {
+    display: none;
+  }
+}
+
+.col {
+  & li:hover {
+    color: $red;
+  }
+}
+
+.pro-col {
+  .title {
+    display: block;
+  }
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  margin-left: 2em;
+  .col-list {
+    font-size: .8em;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    min-width: 200px;
+  }
+}
+
+.brand-list {
+  font-size: .8em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 40%;
+}
+
+.sale-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  font-size: .9em;
+  
+
+  li {
+
+    margin-right: 1rem;
+    
+    &:not(:first-child) {
+      &::before {
+        content: '/';
+      }
+    }
+  }
+
+}

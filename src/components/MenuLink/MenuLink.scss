@@ -1,5 +1,9 @@
 @import '../../scss/color-var.scss';
 
+div.menu {
+  cursor: default;
+}
+
 .menu {
   margin: 0 2.5rem;
   position: relative;
@@ -12,6 +16,7 @@
   }
   .menu-text {
     .text {
+      color: white;
       position: relative;
       z-index: 10;
     }
