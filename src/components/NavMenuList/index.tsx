@@ -47,7 +47,7 @@ const NavMenuList = ({menuItems}: props) => {
           }
 
           return (
-            <li key={index} onMouseOver={select} onMouseLeave={unselected}>
+            <li key={index} className={selectedMenu === item.text? 'hovered' : ''} onMouseOver={select} onMouseLeave={unselected}>
               <MenuLink link={item.link} text={item.text} />
               { item.hasDrop &&
                 <div className={selectedMenu === item.text ? '' : 'none'}>

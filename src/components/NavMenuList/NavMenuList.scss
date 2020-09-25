@@ -42,3 +42,8 @@
   }
 }
 
+.hovered {
+  & .menu .menu-text .text{
+    color: black;
+  }
+}
