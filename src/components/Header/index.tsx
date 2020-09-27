@@ -12,19 +12,19 @@ const Header = () => {
   const searchChange = (e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)
 
   const menuItems = [
-    { text: 'หมวดหมู่สินค้า', link: '/product' },
-    { text: 'แบรนด์', link: '/' },
-    { text: 'สินค้าลดราคา', link: '/' },
+    { text: 'หมวดหมู่สินค้า', hasDrop: true },
+    { text: 'แบรนด์', hasDrop: true },
+    { text: 'สินค้าลดราคา', hasDrop: true },
     { text: 'วิธีการรสั่งซื้อ', link: '/' },
     { text: 'ติดต่อเรา', link: '/' },
   ]
 
   return (
-    <div className='header'>
+    <div className="header">
       <TextSildeBar />
-      <div className='nav'>
+      <div className="nav">
         {/* logo */}
-        <div style={{minWidth:150, height:170, background: 'white'}}></div>
+        <div className="icon" style={{minWidth:170, height:170, background: 'white'}}></div>
         <NavMenuList menuItems={menuItems} />
         <SearchBar search={search} searchChange={searchChange} />
         <LineDecor />

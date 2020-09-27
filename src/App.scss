@@ -4,13 +4,18 @@
 }
 body {
   overflow-x: hidden;
+  background: #303030;
 }
 
 a {
-  color: initial;
+  color: inherit;
   text-decoration: none;
 }
 
 li {
   list-style: none;
+}
+
+.none {
+  display: none;
 }
