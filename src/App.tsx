@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
 import './App.scss';
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage'
+import ProductPage from './pages/ProductPage'
 
 function App() {
   useEffect(() => {
@@ -11,7 +12,10 @@ function App() {
 
   return (
     <div className='App'>
-      <Route exact path='/' component={HomePage}/>
+      <Switch>
+        <Route exact path='/' component={HomePage}/>
+        <Route path='/product/:g/:cat' component={ProductPage}/>
+      </Switch>
     </div>
   );
 }
