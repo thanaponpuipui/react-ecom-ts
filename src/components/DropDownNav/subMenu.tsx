@@ -31,111 +31,111 @@ export const ProductCategory = () => {
   const menshoes:shoesLink[]  = [
     {
       type: 'แตะสวม',
-      link: '/product/men/1'
+      link: '1'
     },
     {
       type: 'แตะคีบ',
-      link: ''
+      link: '2'
     },
     {
       type: 'ผ้าใบ',
-      link: ''
+      link: '2'
     },
     {
       type: 'ฟองน้ำ',
-      link: ''
+      link: '2'
     },
     {
       type: 'รัสส้น',
-      link: ''
+      link: '2'
     },
     {
       type: 'PU/PVC/AIRBLOW',
-      link: ''
+      link: '2'
     },
     {
       type: 'บูต',
-      link: ''
+      link: '2'
     },
     {
       type: 'คัชชู',
-      link: ''
+      link: '2'
     },
     {
       type: 'หัวเหล็ก',
-      link: ''
+      link: '2'
     },
     {
       type: 'ลิขสิทธิ์',
-      link: ''
+      link: '2'
     }
   ]
   const womenshoes:shoesLink[] = [
     {
       type: 'แตะสวม',
-      link: ''
+      link: '1'
     },
     {
       type: 'แตะคีบ',
-      link: ''
+      link: '1'
     },
     {
       type: 'ผ้าใบ',
-      link: ''
+      link: '1'
     },
     {
       type: 'ฟองน้ำ',
-      link: ''
+      link: '1'
     },
     {
       type: 'รัสส้น',
-      link: ''
+      link: '1'
     },
     {
       type: 'PU/PVC',
-      link: ''
+      link: '1'
     },
     {
       type: 'แฟชั่น',
-      link: ''
+      link: '1'
     },
     {
       type: 'คัชชู',
-      link: ''
+      link: '1'
     },
     {
       type: 'ลิขสิทธิ์',
-      link: ''
+      link: '1'
     }
   ]
   const kidshoes:shoesLink[] = [
     {
       type: 'แตะสวม',
-      link: ''
+      link: '1'
     },
     {
       type: 'แตะคีบ',
-      link: ''
+      link: '1'
     },
     {
       type: 'ผ้าใบ',
-      link: ''
+      link: '1'
     },
     {
       type: 'รัสส้น',
-      link: ''
+      link: '1'
     },
     {
       type: 'PU/PVC',
-      link: ''
+      link: '1'
     },
     {
       type: 'แฟชั่น',
-      link: ''
+      link: '1'
     },
     {
       type: 'ลิขสิทธิ์',
-      link: ''
+      link: '1'
     }
   ]
   
@@ -148,10 +148,10 @@ export const ProductCategory = () => {
       <div className="pro-col col">
         <span className="title">รองเท้าผู้ชาย</span>
         <ul className="col-list">
-          <ListAll link=''/>
+          <ListAll link='/product/men/all'/>
           {
             menshoes.map((item, index) => {
-              return <NormalList key={index} text={'รองเท้า' + item.type} link={item.link} />
+              return <NormalList key={index} text={'รองเท้า' + item.type} link={"/product/men/" + item.link} />
             })
           }
         </ul>
@@ -160,10 +160,10 @@ export const ProductCategory = () => {
       <div className="pro-col col">
         <span className="title">รองเท้าผู้หญิง</span>
         <ul className="col-list">
-          <ListAll link=''/>
+          <ListAll link='/product/women/all'/>
           {
             womenshoes.map((item, index)=> {
-              return <NormalList key={index} text={'รองเท้า' + item.type} link={item.link} />
+              return <NormalList key={index} text={'รองเท้า' + item.type} link={"/product/women/" + item.link} />
             })
           }
         </ul>
@@ -172,10 +172,10 @@ export const ProductCategory = () => {
       <div className="pro-col col">
         <span className="title">รองเท้าเด็ก</span>
         <ul className="col-list">
-          <ListAll link=''/>
+          <ListAll link='/product/kid/all'/>
           {
             kidshoes.map((item, index)=> {
-              return <NormalList key={index} text={'รองเท้า' + item.type} link={item.link} />
+              return <NormalList key={index} text={'รองเท้า' + item.type} link={"/product/kid/" + item.link} />
             })
           }
         </ul>
@@ -253,89 +253,88 @@ export const Brand = () => {
   const bList: brandLink[] = [
     {
       name: 'ADDA',
-      link:''
+      link:'1'
     },
     {
       name:'AB-Walk'
-      ,link:''
+      ,link:'1'
     },
     {
       name:'Pekq',
-      link:''
+      link:'1'
     },
     {
       name: 'Kito',
-      link:''
+      link:'1'
     },
     {
       name: 'Gambol',
-      link: ''
+      link: '1'
     },
     {
       name: 'Apple',
-      link: ''
+      link: '1'
     },
     {
       name: 'Footniks',
-      link: ''
+      link: '1'
     },
     {
       name: 'Y-Roons',
-      link: ''
+      link: '1'
     },
     {
       name: 'Macropony',
-      link: ''
+      link: '1'
     },
     {
       name: 'Leo',
-      link: ''
+      link: '1'
     },
     {
       name: 'Mashare',
-      link: ''
+      link: '1'
     },
     {
       name: 'Kento',
-      link: ''
+      link: '1'
     },
     {
       name: 'Kenta (สมชายการค้า)',
-      link: ''
+      link: '1'
     },
     {
       name: 'Shooro',
-      link: ''
+      link: '1'
     },
     {
       name: 'BB Double',
-      link: ''
+      link: '1'
     },
     {
       name: 'Giga',
-      link: ''
+      link: '1'
     },
     {
       name: 'Aerosoft',
-      link: ''
+      link: '1'
     },
     {
       name: 'Sunsang',
-      link: ''
+      link: '1'
     },
     {
       name: 'Aera',
-      link: ''
+      link: '1'
     }
   ]
 
   return (
     <>
       <ul className="brand-list col">
-        <ListAll link=''/>
         {
           bList.map((brand, index) => {
-            return <NormalList link={brand.link} text={brand.name} key={index} />
+            return <NormalList link={"/product-brand/" + brand.link} text={brand.name} key={index} />
           })
         }
       </ul>

@@ -17,6 +17,12 @@
   padding: 20px $g-indent-space 18px $g-indent-space;
   position: relative;
   max-height: 205px;
+  .icon {
+      overflow: hidden;
+      .logo-icon {
+        width:170px;
+      }
+  }
 
   @media only screen and (max-width: 1150px) {
     flex-direction: column;
@@ -31,6 +37,7 @@
     padding: 10px $small-indent-space 10px $small-indent-space;
     .icon {
       margin-bottom: 0;
+      
     }
   }
 
