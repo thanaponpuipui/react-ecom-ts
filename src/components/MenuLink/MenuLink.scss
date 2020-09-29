@@ -22,8 +22,8 @@ div.menu {
     }
 
     .ll {
-      right: -.3em;
-      bottom: .3em;
+      right: -.4em;
+      bottom: .6em;
       position: absolute;
       width: 1.75em;
       height: .11em;
@@ -35,10 +35,10 @@ div.menu {
       transform: translate(0, 0);
     }
     .second {
-      transform: translate(-5px, .16em);
+      transform: translate(-5px, .19em);
     }
     .third {
-      transform: translate(-10px, .32em);
+      transform: translate(-10px, .38em);
     }
   }
 }
