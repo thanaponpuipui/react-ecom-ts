@@ -15,27 +15,27 @@ const ProductFilter = () => {
           <tbody>
             <tr>
               <td>0-30</td>
-              <td><input type="checkbox" name="priceFilter"></input></td>
+              <td><Checkbox/></td>
             </tr>
             <tr>
               <td>31-40</td>
-              <td><input type="checkbox" name="priceFilter"></input></td>
+              <td><Checkbox/></td>
             </tr>
             <tr>
               <td>41-60</td>
-              <td><input type="checkbox" name="priceFilter"></input></td>
+              <td><Checkbox/></td>
             </tr>
             <tr>
               <td>61-100</td>
-              <td><input type="checkbox" name="priceFilter"></input></td>
+              <td><Checkbox/></td>
             </tr>
             <tr>
               <td>101-150</td>
-              <td><input type="checkbox" name="priceFilter"></input></td>
+              <td><Checkbox/></td>
             </tr>
             <tr>
               <td>151-up</td>
-              <td><input type="checkbox" name="priceFilter"></input></td>
+              <td><Checkbox/></td>
             </tr>
           </tbody>
         </table>
@@ -45,6 +45,14 @@ const ProductFilter = () => {
           <input className="price-end" type="number"/>
           <Button variant="contained" >submit</Button>
         </div>
+      </div>
+
+      <div className="cat-filter">
+        <ul className='filter-list'>
+          <li>new</li>
+          <li>best seller</li>
+          <li>clearance</li>
+        </ul>
       </div>
     </div>
   )
