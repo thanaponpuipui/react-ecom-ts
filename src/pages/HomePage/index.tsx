@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Banner from '../../components/Banner'
@@ -6,6 +6,10 @@ import Body from './Body'
 import './HomePage.scss'
 
 const HomePage = () => {
+
+  useEffect(() => {
+    document.title = 'Bathadee - main'
+  }, [])
 
   return (
     <>
