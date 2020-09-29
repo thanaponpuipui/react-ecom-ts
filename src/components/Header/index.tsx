@@ -16,7 +16,7 @@ const Header = () => {
     { text: 'หมวดหมู่สินค้า', hasDrop: true },
     { text: 'แบรนด์', hasDrop: true },
     { text: 'สินค้าลดราคา', hasDrop: true },
-    { text: 'วิธีการรสั่งซื้อ', link: '/' },
+    { text: 'วิธีการสั่งซื้อ', link: '/' },
     { text: 'ติดต่อเรา', link: '/' },
   ]
 
@@ -25,7 +25,11 @@ const Header = () => {
       <TextSildeBar />
       <div className="nav">
         {/* logo */}
-        <Link to='/'><div className="icon" style={{minWidth:170, height:170, background: 'white'}}></div></Link>
+        <Link to='/'>
+          <div className="icon" style={{width:170, height:170, background: 'white'}}>
+            <img className="logo-icon" src="https://ucarecdn.com/56d9df40-993f-4503-b276-00cb3aa3d2a8/bathadee.jpg" alt="logo" />
+          </div>
+        </Link>
         <NavMenuList menuItems={menuItems} />
         {/* <SearchBar search={search} searchChange={searchChange} /> */}
         <LineDecor />
