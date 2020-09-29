@@ -1,0 +1,8 @@
+@import '../../scss/rule-var.scss';
+@import '../../scss/color-var.scss';
+
+.brand-show {
+  height: 170px;
+  padding: 1rem 1rem 1rem $g-indent-space;
+  background: $reda;
+}
