@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import ProductCard from '../../components/ProductCard'
+import ProductFilter from '../../components/ProductFilter'
 import './ProductPage.scss'
 
 const ProductPage = () => {
@@ -10,7 +11,9 @@ const ProductPage = () => {
       <Header />
 
       <main className="product-body">
-        <div className="side-panel"></div>
+        <div className="side-panel">
+          <ProductFilter/>
+        </div>
         <div className="content">
           <h2 className='title'>สินค้า</h2>
           <div className="item-list">
