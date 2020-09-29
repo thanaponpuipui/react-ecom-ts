@@ -1,4 +1,5 @@
 import React, { useState, ChangeEvent } from 'react'
+import { Link } from 'react-router-dom'
 import NavMenuList from '../NavMenuList'
 import TextSildeBar from '../TextSlideBar'
 import SearchBar from '../SearchBar'
@@ -24,7 +25,7 @@ const Header = () => {
       <TextSildeBar />
       <div className="nav">
         {/* logo */}
-        <div className="icon" style={{minWidth:170, height:170, background: 'white'}}></div>
+        <Link to='/'><div className="icon" style={{minWidth:170, height:170, background: 'white'}}></div></Link>
         <NavMenuList menuItems={menuItems} />
         <SearchBar search={search} searchChange={searchChange} />
         <LineDecor />

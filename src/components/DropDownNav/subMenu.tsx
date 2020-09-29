@@ -31,7 +31,7 @@ export const ProductCategory = () => {
   const menshoes:shoesLink[]  = [
     {
       type: 'แตะสวม',
-      link: ''
+      link: '/product/men/1'
     },
     {
       type: 'แตะคีบ',

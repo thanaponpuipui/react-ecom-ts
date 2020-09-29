@@ -1,3 +1,6 @@
+@import './scss/color-var.scss';
+@import './scss/rule-var.scss';
+
 *{
   padding: 0;
   margin: 0;
@@ -18,4 +21,12 @@ li {
 
 .none {
   display: none;
+}
+
+
+main {
+  padding: 0 $g-indent-space;
+  text-align: center;
+  margin: 4rem 0;
+
 }

@@ -1,0 +1,27 @@
+@import '../../scss/color-var.scss';
+@import '../../scss/rule-var.scss';
+
+.product-body {
+  min-height: 55vh;
+  display: flex;
+  justify-content: space-between;
+  padding:0;
+  margin: 0;
+  .content {
+    padding-left: 2rem;
+    width: 80%;
+    text-align: start;
+    h2.title {
+      margin: 1rem;
+      color: $red;
+    }
+    .item-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .side-panel {
+    width: 20%;
+    background: white;
+  }
+}

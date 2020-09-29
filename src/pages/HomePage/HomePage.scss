@@ -1,15 +1,11 @@
 @import "../../scss/color-var.scss";
 @import "../../scss/rule-var.scss";
 
-main {
-  padding: 0 $g-indent-space;
-  text-align: center;
-  margin: 4rem 0;
-
-}
-
 .deal-card-list {
+  margin-top: 1rem;
   display: flex;
-  justify-content: space-between;
+  padding: 1rem;
+  justify-content: center;
+  background: #FD020350;
   flex-wrap: wrap;
 }

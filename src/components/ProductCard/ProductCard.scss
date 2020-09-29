@@ -1,0 +1,11 @@
+@import '../../scss/color-var.scss';
+@import '../../scss/rule-var.scss';
+
+.product-card {
+  margin: 1rem;
+  width: 300px;
+  
+  .product-image {
+    width: 300px;
+  }
+}
