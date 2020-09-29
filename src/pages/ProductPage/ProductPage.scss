@@ -6,11 +6,12 @@
   display: flex;
   justify-content: space-between;
   padding:0;
-  margin: 0;
+  margin:0;
   .content {
     padding-left: 2rem;
     width: 80%;
     text-align: start;
+    margin-bottom: 2rem;
     h2.title {
       margin: 1rem;
       color: $red;
@@ -20,8 +21,16 @@
       flex-wrap: wrap;
     }
   }
+
   .side-panel {
-    width: 20%;
+    text-align: start;
+    width: 200px;
     background: white;
+    padding: 1.5rem 75px 1.5rem $g-indent-space;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
   }
 }

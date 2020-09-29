@@ -16,7 +16,7 @@ const ProductCard = () => {
           className='product-image'
           component="img"
           alt="example image"
-          image="https://ucarecdn.com/fa297ebd-50d8-4dcf-add4-821ba8af2b51/photoofalandscape.png"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSrCtwInDrGzMPZt3WTWpyg-Uks12x2fF3GVA&usqp=CAU"
           title="example title here"
         />
         <CardContent>
