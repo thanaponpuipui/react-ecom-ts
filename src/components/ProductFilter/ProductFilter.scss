@@ -1,3 +1,61 @@
+@import '../../scss/color-var.scss';
+
+$underline-border: 1px solid $grey;
+
 .product-filter {
-  display: flex;  
+  display: flex;
+  flex-direction: column;
+
+  .price-table {
+    border-collapse: collapse;
+    width: 100%;
+    td, th {
+      border-bottom: $underline-border;
+      text-align: left;
+      padding-left: 1rem;
+    }
+  }
+
+  .price-custom {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    border-bottom: $underline-border;
+
+    .price-input {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: .5rem;
+      input {
+        max-width: 100px;
+      }
+    }
+
+    button {
+      width: 100%;
+    }
+
+
+  }
+
+  .cat-filter {
+    padding: 1rem 0;
+    margin-top: 1rem;
+    .title {
+      padding: 0 1rem;
+      font-weight: bold;
+      border-bottom: $underline-border;
+    }
+    .filter-list {
+      padding: 1rem;
+    }
+    .type-item {
+      cursor: pointer;
+      &:hover {
+        color: $red;
+      }
+      &.selected {
+        color: $red;
+      }
+    }
+  }
 }
