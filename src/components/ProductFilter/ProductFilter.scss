@@ -6,6 +6,13 @@ $underline-border: 1px solid $grey;
   display: flex;
   flex-direction: column;
 
+  > .title {
+    margin-bottom: 2rem;
+  }
+  .price-filter {
+    margin-bottom: 1rem;
+  }
+
   .price-table {
     border-collapse: collapse;
     width: 100%;
