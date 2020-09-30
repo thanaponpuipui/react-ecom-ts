@@ -1,0 +1,50 @@
+@import '../../scss/color-var.scss';
+@import '../../scss/rule-var.scss';
+
+.footer {
+  background: $blue;
+  padding: 25px $g-indent-space;
+  display: flex;
+  justify-content: space-between;
+  
+  .infomation{
+    color: $white;
+    font-size: .85rem;
+    .info-list {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .info {
+        margin: 0 1.25rem;
+        cursor: pointer;
+      }
+    }
+    .cp {
+      position: relative;
+      top: 1.2rem;
+      font-size: .8em;
+      text-decoration: underline;
+      color: #AAAAAA;
+    }
+  }
+
+  .social-list {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 64px;
+      height: 64px;
+      overflow: hidden;
+      margin: 0 .5rem;
+    }
+  }
+}

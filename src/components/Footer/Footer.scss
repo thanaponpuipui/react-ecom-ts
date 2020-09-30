@@ -3,48 +3,41 @@
 
 .footer {
   background: $blue;
-  padding: 25px $g-indent-space;
+  padding: 3rem $g-indent-space;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  color: $white;
   display: flex;
-  justify-content: space-between;
-  
-  .infomation{
-    color: $white;
-    font-size: .85rem;
-    .info-list {
-      margin-top: 1em;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-
-      .info {
-        margin: 0 1.25rem;
-        cursor: pointer;
+  justify-content: center;
+  .foot-content {
+    display: flex;
+    justify-content: flex-start;
+    > div {
+      margin: 0 3rem;
+      padding: 0 1rem;
+      min-width: 150px;
+      max-width: 200px;
+      ul {
+        padding-top: 1rem;
       }
     }
-    .cp {
-      position: relative;
-      top: 1.2rem;
-      font-size: .8em;
-      text-decoration: underline;
-      color: #AAAAAA;
-    }
   }
+}
 
-  .social-list {
+.foot-icon-logo {
+  width: 175px;
+  height: 175px;
+  margin: 0 3rem;
+  overflow: hidden;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-
-    .image-wrapper {
-      position: relative;
-      display: inline-block;
-      width: 64px;
-      height: 64px;
-      overflow: hidden;
-      margin: 0 .5rem;
-    }
+  img {
+    width: 100%;
   }
+}
+
+.cr {
+  position: absolute;
+  bottom: .3rem;
+  left: $g-indent-space;
 }
