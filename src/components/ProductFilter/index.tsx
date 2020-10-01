@@ -49,7 +49,7 @@ const ProductFilter = () => {
               <td><Checkbox/></td>
             </tr>
             <tr>
-              <td>151-up</td>
+              <td>151-Up</td>
               <td><Checkbox/></td>
             </tr>
           </tbody>
