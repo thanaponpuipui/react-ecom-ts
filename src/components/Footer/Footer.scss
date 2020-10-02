@@ -60,7 +60,7 @@
   .footer {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    padding: 4rem $small-indent-space;
+    padding: 2rem $small-indent-space .5rem;
 
     .foot-content {
       flex-wrap: wrap;
@@ -102,6 +102,6 @@
   }
 
   .cr {
-    left: $small-indent-space - 25px;
+    font-size: .6rem;
   }
 }
