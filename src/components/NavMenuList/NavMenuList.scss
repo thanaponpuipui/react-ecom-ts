@@ -1,4 +1,5 @@
 @import '../../scss/color-var.scss'; // global color variable
+@import '../../scss/rule-var.scss';
 
 .nav-menu-list {
   display:flex;
@@ -44,6 +45,9 @@
     z-index: 3;
     @media only screen and (max-width: 1150px) {
       height: 18px;
+      left: 0;
+      width: 100vw;
+      max-width: 100vw;
     }
   }
 }
