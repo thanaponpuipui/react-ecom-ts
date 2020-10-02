@@ -3,4 +3,25 @@
   padding: 0;
   position: relative;
   display: block;
+  width: 100vw;
+  .large-banner {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+  .small-banner {
+    display: none;
+    img {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .large-banner {
+      display: none;
+    }
+    .small-banner {
+      display: block;
+    }
+  }
 }

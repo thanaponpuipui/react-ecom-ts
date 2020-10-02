@@ -3,21 +3,24 @@
 
 .footer {
   background: $blue;
-  padding: 3rem $g-indent-space;
+  padding: 4rem $g-indent-space;
   margin: 0;
   position: relative;
   overflow: hidden;
   color: $white;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   .foot-content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    font-size: .9rem;
+    flex-grow: 1;
+    max-width: 900px;
     > div {
-      margin: 0 3rem;
-      padding: 0 1rem;
-      min-width: 150px;
-      max-width: 200px;
+      margin: 0 1rem;
+      padding: 0 .5rem;
+      min-width: 100px;
       ul {
         padding-top: 1rem;
       }
@@ -26,10 +29,18 @@
 }
 
 .foot-icon-logo {
-  width: 175px;
-  height: 175px;
-  margin: 0 3rem;
+  width: 8rem;
+  min-width: 8rem;
+  height: 8rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
   overflow: hidden;
+
+  // when foot collapse
+  @media only screen and (max-width: 1000px) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
 
   img {
     width: 100%;
@@ -40,4 +51,57 @@
   position: absolute;
   bottom: .3rem;
   left: $g-indent-space;
+  font-size: .8rem;
+  color: $light-grey
+}
+
+
+@media only screen and (max-width: $medium) {
+  .footer {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    padding: 2rem $small-indent-space .5rem;
+
+    .foot-content {
+      flex-wrap: wrap;
+      flex-grow: 0;
+      > div {
+        margin-bottom: 2rem;
+        margin-left: 0;
+        min-width: 75px;
+      }
+    }
+
+    .foot-icon-logo {
+      width: 4rem;
+      min-width: 4rem;
+      height: 4rem;
+      margin:0;
+    }
+  }
+  .cr {
+    left: $small-indent-space;
+  }
+}
+
+@media only screen and (max-width: $small) {
+  .footer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    .foot-content {
+      font-size: .75rem;
+    }
+
+    .foot-icon-logo {
+      width: 6rem;
+      min-width: 6rem;
+      height: 6rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .cr {
+    font-size: .6rem;
+  }
 }

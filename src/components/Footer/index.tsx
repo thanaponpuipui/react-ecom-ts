@@ -108,7 +108,7 @@ const Footer = () => {
       </div>
       <div className="foot-content">
         <div className="foot-menu">
-          <h2>Main Menu</h2>
+          <h3>Main Menu</h3>
           <ul className="foot-menu-list">
             <li className="foot-menu-item">Men</li>
             <li className="foot-menu-item">Women</li>
@@ -118,14 +118,14 @@ const Footer = () => {
           </ul>
         </div>
         <div className="foot-contact">
-          <h2>Contact</h2>
+          <h3>Contact</h3>
           <ul className="foot-contact-list">
-            <li className="foot-contact-item">Tel: 080-000-1900</li>
-            <li className="foot-contact-item">Address: </li>
+            <li className="foot-contact-item">Tel:<br/>080-000-1900</li>
+            <li className="foot-contact-item">Address:<br/></li>
           </ul>
         </div>
         <div className="foot-branches">
-          <h2>Branches</h2>
+          <h3>Branches</h3>
           <ul className="foot-branches-list">
             <li className="foot-branch-item">Branch1:</li>
             <li className="foot-branch-item">Branch2:</li>
@@ -134,7 +134,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="social-media">
-          <h2>Social Media</h2>
+          <h3>Social Media</h3>
           <ul className="social-media-list">
             <li className="social-media-link">Line@</li>
             <li className="social-media-link">Facebook</li>
